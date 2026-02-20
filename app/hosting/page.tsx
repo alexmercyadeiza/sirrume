@@ -102,7 +102,7 @@ export default function HostingPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-luxury-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1768508947825-0a63f7c46a2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBldmVudCUyMGF1ZGllbmNlfGVufDF8fHx8MTc2ODkzMTAyNnww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://ik.imagekit.io/vvls7af9xbd6/WhatsApp%20Image%202025-09-26%20at%2012.20.00%20PM_LhUSUZ0z_.jpeg?updatedAt=1771532065960"
                 alt="Corporate event"
                 className="w-full h-[500px] object-cover"
               />
@@ -152,20 +152,14 @@ export default function HostingPage() {
       <section className="py-20 lg:py-32 bg-gold">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <h2 className="mb-6 text-charcoal">
-            Book Sir Rume for Your Event
+            Hire Sir Rume for Your Event
           </h2>
           <p className="text-xl text-charcoal/80 mb-10 max-w-2xl mx-auto">
             Make your next event unforgettable with professional hosting that
             engages and inspires.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button
-              variant="secondary"
-              onClick={() => router.push("/bookings")}
-            >
-              Book Now
-            </Button>
-            <Button variant="outline" onClick={() => router.push("/contact")}>
+            <Button variant="secondary" onClick={() => router.push("/contact")}>
               Request Information
             </Button>
           </div>

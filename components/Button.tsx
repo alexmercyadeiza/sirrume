@@ -2,7 +2,7 @@ import React from "react";
 
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "outline-white";
   onClick?: () => void;
   className?: string;
   type?: "button" | "submit";
@@ -26,6 +26,8 @@ export function Button({
     secondary: "bg-charcoal text-white hover:bg-charcoal-light",
     outline:
       "border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white",
+    "outline-white":
+      "border-2 border-white text-white bg-transparent hover:bg-white/20",
   };
 
   return (

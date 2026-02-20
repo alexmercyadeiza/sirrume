@@ -6,6 +6,7 @@ import { Mic, Users, TrendingUp, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -56,31 +57,21 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-cream overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+      <section className="relative min-h-[85vh] bg-cream overflow-hidden">
+        <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzcGVha2VyJTIwc3RhZ2V8ZW58MXx8fHwxNzY4OTk4MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="https://ik.imagekit.io/vvls7af9xbd6/Home%20Banner%202_sk3wnXWCd.png?updatedAt=1771533155668"
             alt="Hero background"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="container mx-auto px-6 lg:px-12 py-20 lg:py-32 text-center relative z-10">
-          <h1 className="mb-6">SIR RUME</h1>
-          <p className="text-xl lg:text-2xl text-charcoal/70 mb-4 tracking-wide">
-            MC &bull; Host &bull; Life Coach &bull; Corporate Trainer &bull;
-            Public Speaker
-          </p>
-          <p className="text-3xl lg:text-5xl font-serif text-gold mb-12 tracking-wide">
-            Speak to Shift
-          </p>
-
+        <div className="absolute bottom-6 lg:bottom-36 left-0 right-0 text-center z-10 px-6 lg:px-12">
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            <Button onClick={() => router.push("/bookings")}>Book Me</Button>
-            <Button variant="outline" onClick={() => router.push("/coaching")}>
+            <Button variant="outline-white" onClick={() => router.push("/coaching")}>
               Register for Coaching
             </Button>
             <Button
-              variant="outline"
+              variant="outline-white"
               onClick={() => router.push("/talent-rescue")}
             >
               Join Talent Rescue
@@ -138,9 +129,11 @@ export default function HomePage() {
                 key={index}
                 className="flex items-center justify-center p-4 opacity-60 hover:opacity-100 transition-all duration-300"
               >
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.name}
+                  width={120}
+                  height={60}
                   className={`${("className" in logo && logo.className) || "h-10"} w-auto max-w-[120px] object-contain ${logo.invert ? "invert" : ""} ${logo.grayscale ? "grayscale" : "brightness-0"}`}
                 />
               </div>

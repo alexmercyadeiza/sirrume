@@ -62,7 +62,7 @@ export default function TalentRescuePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="rounded-2xl overflow-hidden shadow-luxury-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1758691736067-b309ee3ef7b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjB0cmFpbmluZyUyMGJ1c2luZXNzfGVufDF8fHx8MTc2ODkxMDg0MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://ik.imagekit.io/vvls7af9xbd6/Talent%20Rescue_ZfjYZZAOj.jpeg?updatedAt=1771533562695"
                 alt="Corporate training"
                 className="w-full h-[500px] object-cover"
               />
@@ -242,13 +242,7 @@ export default function TalentRescuePage() {
             support they need to succeed.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button
-              variant="secondary"
-              onClick={() => router.push("/bookings")}
-            >
-              Register Now
-            </Button>
-            <Button variant="outline" onClick={() => router.push("/contact")}>
+            <Button variant="secondary" onClick={() => router.push("/contact")}>
               Request More Information
             </Button>
           </div>

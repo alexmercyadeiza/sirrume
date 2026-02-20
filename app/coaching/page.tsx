@@ -110,7 +110,7 @@ export default function CoachingPage() {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-luxury-lg">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1761933799610-c9a75f115794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2FjaGluZyUyMG1lbnRvciUyMGRpc2N1c3Npb258ZW58MXx8fHwxNzY4OTIxNDk2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://ik.imagekit.io/vvls7af9xbd6/Coaching%20Page%20image_zm1DpOlRM.jpeg?updatedAt=1771533522388"
               alt="Coaching session"
               className="w-full h-[500px] object-cover"
             />
@@ -204,19 +204,13 @@ export default function CoachingPage() {
       {/* CTA Section */}
       <section className="py-20 lg:py-32 bg-gold">
         <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h2 className="mb-6 text-charcoal">Book a Coaching Session</h2>
+          <h2 className="mb-6 text-charcoal">Start Your Coaching Journey</h2>
           <p className="text-xl text-charcoal/80 mb-10 max-w-2xl mx-auto">
             Start your transformation journey today with personalized coaching
             designed to unlock your potential.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button
-              variant="secondary"
-              onClick={() => router.push("/bookings")}
-            >
-              Book Now
-            </Button>
-            <Button variant="outline" onClick={() => router.push("/contact")}>
+            <Button variant="secondary" onClick={() => router.push("/contact")}>
               Learn More
             </Button>
           </div>

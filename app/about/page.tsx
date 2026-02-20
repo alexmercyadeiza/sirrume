@@ -79,7 +79,7 @@ export default function AboutPage() {
             <div className="order-1 lg:order-2">
               <div className="rounded-2xl overflow-hidden shadow-luxury-lg">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1616804827035-f4aa814c14ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwYnVzaW5lc3MlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzY4OTE0NTkyfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="https://ik.imagekit.io/vvls7af9xbd6/1758912316205_6df_49Uwb4.jpeg?updatedAt=1771530921566"
                   alt="Osarume Akenzua - Sir Rume"
                   className="w-full h-[600px] object-cover"
                 />
@@ -153,10 +153,7 @@ export default function AboutPage() {
             service in your organization.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button onClick={() => router.push("/bookings")}>
-              Book a Session
-            </Button>
-            <Button variant="outline" onClick={() => router.push("/contact")}>
+            <Button onClick={() => router.push("/contact")}>
               Get in Touch
             </Button>
           </div>

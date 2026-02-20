@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export function Header() {
@@ -24,8 +25,7 @@ export function Header() {
     { href: "/hosting", label: "Hosting" },
     { href: "/coaching", label: "Coaching" },
     { href: "/talent-rescue", label: "Talent Rescue" },
-    { href: "/bookings", label: "Bookings" },
-    { href: "/blog", label: "Blog" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -44,9 +44,11 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="transition-opacity hover:opacity-80">
-            <img
-              src="/images/logo.png"
+            <Image
+              src="https://ik.imagekit.io/vvls7af9xbd6/Logo%201_TARIrCw-z.png?updatedAt=1771532479798"
               alt="Sir Rume"
+              width={120}
+              height={40}
               className="h-8 md:h-10 w-auto"
             />
           </Link>
